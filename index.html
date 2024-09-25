@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energia Nuclear - Informações e Modelos 3D</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            background-image: url('data:image/png;base64,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');
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #1a1a1a;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            flex-wrap: wrap;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .nav-item {
+            margin: 5px 15px;
+            position: relative;
+        }
+
+        .nav-link {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            transition: color 0.3s;
+            white-space: nowrap;
+        }
+
+        .nav-link i {
+            margin-right: 5px;
+        }
+
+        .nav-link:hover {
+            color: #4CAF50;
+        }
+
+        .dropdown {
+            display: none;
+            position: absolute;
+            background-color: #2a2a2a;
+            min-width: 150px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+            border-radius: 4px;
+        }
+
+        .nav-item:hover .dropdown {
+            display: block;
+        }
+
+        .dropdown li {
+            padding: 10px;
+        }
+
+        .dropdown a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .dropdown a:hover {
+            color: #4CAF50;
+        }
+
+        .content {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background-color: #1e1e1e;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s, transform 0.5s;
+        }
+
+        .card.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        h2 {
+            color: #4CAF50;
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .nav-item {
+                margin: 5px 0;
+            }
+
+            .dropdown {
+                position: static;
+                display: none;
+                width: 100%;
+            }
+
+            .nav-item:hover .dropdown {
+                display: block;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .nav-link {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li class="nav-item">
+                <a href="#modelos3d" class="nav-link">
+                    <i class="fas fa-cube"></i>
+                    Modelos 3D
+                </a>
+                <ul class="dropdown">
+                    <li><a href="https://netheriosa.github.io/intro-usina/">Usina</a></li>
+                    <li><a href="https://netheriosa.github.io/intro/">Chernobyl</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="https://netheriosa.github.io/pag2/" class="nav-link">
+                    <i class="fas fa-radiation"></i>
+                    Chernobyl
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="https://netheriosa.github.io/pag3/" class="nav-link">
+                    <i class="fas fa-atom"></i>
+                    Energia Nuclear
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="https://netheriosa.github.io/pag4/" class="nav-link">
+                    <i class="fas fa-industry"></i>
+                    Usina
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <div class="card">
+            <h2>O que é uma Usina Nuclear?</h2>
+            <p>Uma usina nuclear é uma instalação industrial utilizada para a geração de energia elétrica a partir de energia nuclear. Ela usa a fissão de átomos de urânio para produzir calor, que é então usado para gerar vapor e acionar turbinas conectadas a geradores elétricos.</p>
+        </div>
+
+        <div class="card">
+            <h2>Como funciona uma Usina Nuclear?</h2>
+            <p>O processo básico envolve o aquecimento de água para produzir vapor, que move turbinas conectadas a geradores. A diferença está na fonte de calor: em vez de queimar combustíveis fósseis, as usinas nucleares usam a energia liberada pela fissão de átomos de urânio no reator nuclear.</p>
+        </div>
+
+        <div class="card">
+            <h2>Vantagens da Energia Nuclear</h2>
+            <p>As usinas nucleares produzem energia de forma constante e não emitem gases de efeito estufa durante a operação. Elas têm uma alta capacidade de geração de energia e ocupam menos espaço em comparação com outras fontes de energia renovável.</p>
+        </div>
+
+        <div class="card">
+            <h2>Desafios e Preocupações</h2>
+            <p>Os principais desafios incluem a gestão segura de resíduos radioativos, os altos custos de construção e manutenção, e as preocupações com segurança após acidentes como Chernobyl e Fukushima. Há também debates sobre a sustentabilidade a longo prazo da energia nuclear.</p>
+        </div>
+
+        <div class="card">
+            <h2>Componentes Principais de uma Usina Nuclear</h2>
+            <p>Uma usina nuclear típica inclui um reator nuclear, geradores de vapor, turbinas, geradores elétricos e sistemas de segurança e resfriamento. O reator é o coração da usina, onde ocorre a fissão nuclear controlada.</p>
+        </div>
+
+        <div class="card">
+            <h2>Segurança em Usinas Nucleares</h2>
+            <p>As usinas nucleares modernas são projetadas com múltiplas camadas de segurança, incluindo contenções de concreto reforçado, sistemas redundantes de resfriamento e procedimentos rigorosos de operação. A segurança é uma prioridade máxima na indústria nuclear.</p>
+        </div>
+
+        <div class="card">
+            <h2>Impacto Ambiental</h2>
+            <p>Embora as usinas nucleares não emitam gases de efeito estufa durante a operação, há preocupações ambientais relacionadas à mineração de urânio e ao armazenamento de resíduos radioativos. O impacto térmico nos corpos d'água usados para resfriamento também é uma consideração importante.</p>
+        </div>
+
+        <div class="card">
+            <h2>Futuro da Energia Nuclear</h2>
+            <p>O futuro da energia nuclear inclui o desenvolvimento de reatores menores e mais seguros, como os reatores modulares pequenos (SMRs), e pesquisas em fusão nuclear. Alguns países estão reduzindo sua dependência da energia nuclear, enquanto outros a veem como parte crucial de suas estratégias de energia limpa.</p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.card');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            cards.forEach(card => {
+                observer.observe(card);
+            });
+
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                link.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-3px)';
+                    this.style.transition = 'transform 0.3s';
+                });
+                link.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+
+            function adjustLayout() {
+                const navbar = document.querySelector('.navbar');
+                const navLinks = document.querySelector('.nav-links');
+                if (window.innerWidth <= 768) {
+                    navbar.style.flexDirection = 'column';
+                    navLinks.style.flexDirection = 'column';
+                } else {
+                    navbar.style.flexDirection = 'row';
+                    navLinks.style.flexDirection = 'row';
+                }
+            }
+
+            adjustLayout();
+            window.addEventListener('resize', adjustLayout);
+        });
+    </script>
+</body>
+</html>
+
